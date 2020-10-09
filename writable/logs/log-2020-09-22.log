@@ -1,0 +1,26 @@
+CRITICAL - 2020-09-22 08:50:29 --> include(includes/sidebar.php.php): failed to open stream: No such file or directory
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Views\layout\app.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include...', 'C:\\Users\\Dhiraj...', 27, Array)
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Views\layout\app.php(27): include()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\Users\\Dhiraj...')
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(257): CodeIgniter\View\View->render('layout/app', Array, true)
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('events', Array, true)
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\events.php(7): view('events')
+#6 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\events->index()
+#7 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\events))
+#8 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#11 {main}
+CRITICAL - 2020-09-22 08:50:32 --> include(includes/sidebar.php.php): failed to open stream: No such file or directory
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Views\layout\app.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include...', 'C:\\Users\\Dhiraj...', 27, Array)
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Views\layout\app.php(27): include()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\Users\\Dhiraj...')
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(257): CodeIgniter\View\View->render('layout/app', Array, true)
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('gallery', Array, true)
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\gallery.php(7): view('gallery')
+#6 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\gallery->index()
+#7 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gallery))
+#8 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#11 {main}

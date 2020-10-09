@@ -1,0 +1,32 @@
+CRITICAL - 2020-09-29 04:54:01 --> Object of class Closure could not be converted to string
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Config\Routes.php(46): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\Users\\Dhiraj...', 46, Array)
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(780): require('C:\\Users\\Dhiraj...')
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#6 {main}
+CRITICAL - 2020-09-29 04:54:12 --> Object of class Closure could not be converted to string
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Config\Routes.php(46): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\Users\\Dhiraj...', 46, Array)
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(780): require('C:\\Users\\Dhiraj...')
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#6 {main}
+CRITICAL - 2020-09-29 04:54:23 --> Object of class Closure could not be converted to string
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Config\Routes.php(46): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\Users\\Dhiraj...', 46, Array)
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(780): require('C:\\Users\\Dhiraj...')
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#6 {main}
+CRITICAL - 2020-09-29 04:54:39 --> Object of class Closure could not be converted to string
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Config\Routes.php(47): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\Users\\Dhiraj...', 47, Array)
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(780): require('C:\\Users\\Dhiraj...')
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#6 {main}

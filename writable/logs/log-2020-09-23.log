@@ -1,0 +1,121 @@
+CRITICAL - 2020-09-23 04:25:23 --> include(admin/admin-header): failed to open stream: No such file or directory
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Views\layout\admin.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/a...', 'C:\\Users\\Dhiraj...', 11, Array)
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Views\layout\admin.php(11): include()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\Users\\Dhiraj...')
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(257): CodeIgniter\View\View->render('layout/admin', Array, true)
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('dashboard', Array, true)
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\Admin.php(7): view('dashboard')
+#6 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->index()
+#7 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#11 {main}
+CRITICAL - 2020-09-23 04:25:52 --> include(includes/admin/admin-header): failed to open stream: No such file or directory
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Views\layout\admin.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include...', 'C:\\Users\\Dhiraj...', 11, Array)
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Views\layout\admin.php(11): include()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\Users\\Dhiraj...')
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(257): CodeIgniter\View\View->render('layout/admin', Array, true)
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('dashboard', Array, true)
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\Admin.php(7): view('dashboard')
+#6 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->index()
+#7 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#11 {main}
+CRITICAL - 2020-09-23 04:25:57 --> include(includes/admin/admin-header): failed to open stream: No such file or directory
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Views\layout\admin.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include...', 'C:\\Users\\Dhiraj...', 11, Array)
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Views\layout\admin.php(11): include()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\Users\\Dhiraj...')
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(257): CodeIgniter\View\View->render('layout/admin', Array, true)
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('dashboard', Array, true)
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\Admin.php(7): view('dashboard')
+#6 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->index()
+#7 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#11 {main}
+CRITICAL - 2020-09-23 04:43:05 --> Invalid file: login.php
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('login', Array, true)
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\Admin.php(7): view('login')
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->index()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#8 {main}
+CRITICAL - 2020-09-23 04:43:21 --> Invalid file: login.php
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('login', Array, true)
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\Admin.php(7): view('login')
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->index()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#8 {main}
+CRITICAL - 2020-09-23 04:43:31 --> Invalid file: login.php
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('login', Array, true)
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\Admin.php(7): view('login')
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->index()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#8 {main}
+CRITICAL - 2020-09-23 04:43:42 --> Invalid file: login.php
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('login', Array, true)
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\Admin.php(7): view('login')
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->index()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#8 {main}
+CRITICAL - 2020-09-23 04:45:29 --> Invalid file: dashboard.php
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('dashboard', Array, true)
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\Admin.php(12): view('dashboard')
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->Dashboard()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#8 {main}
+CRITICAL - 2020-09-23 04:51:00 --> Argument 2 passed to view() must be of the type array, string given, called in C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\about.php on line 8
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\about.php(8): view('about', 'About Us')
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\about->index()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\about))
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#6 {main}
+CRITICAL - 2020-09-23 04:51:45 --> Argument 2 passed to view() must be of the type array, string given, called in C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\about.php on line 8
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\about.php(8): view('about', 'About Us')
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\about->index()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\about))
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#6 {main}
+CRITICAL - 2020-09-23 04:51:46 --> Argument 2 passed to view() must be of the type array, string given, called in C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\about.php on line 8
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\about.php(8): view('about', 'About Us')
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\about->index()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\about))
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#6 {main}
+CRITICAL - 2020-09-23 04:51:46 --> Argument 2 passed to view() must be of the type array, string given, called in C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\about.php on line 8
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\about.php(8): view('about', 'About Us')
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\about->index()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\about))
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#6 {main}

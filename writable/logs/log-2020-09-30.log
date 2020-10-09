@@ -1,0 +1,179 @@
+CRITICAL - 2020-09-30 04:19:28 --> Unable to connect to the database.
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\Admin.php(85): CodeIgniter\Model->first()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->login()
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#9 {main}
+CRITICAL - 2020-09-30 05:07:52 --> Call to a member function setTo() on null
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->forget2()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 05:09:05 --> Call to a member function setTo() on null
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->forget2()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 05:09:25 --> Call to a member function to() on null
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->forget2()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 05:09:55 --> Call to a member function library() on null
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->forget2()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 05:10:47 --> Call to a member function library() on null
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->forget2()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 05:11:34 --> Call to undefined method CodeIgniter\Email\Email::to()
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->forget2()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 05:11:57 --> Call to a member function printDebugger() on null
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->forget2()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 05:37:04 --> Object of class CodeIgniter\Email\Email could not be converted to string
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\Admin.php(156): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\Users\\Dhiraj...', 156, Array)
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->forget2()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#6 {main}
+CRITICAL - 2020-09-30 05:39:04 --> Cannot use object of type CodeIgniter\Email\Email as array
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->forget2()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 06:27:04 --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\Users\\Dhiraj...', 183, Array)
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\Admin.php(183): mail('aryandeshmukh98...', 'Email Test', 'hello', 'From: dhirajdes...')
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->forget2()
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#7 {main}
+CRITICAL - 2020-09-30 06:39:54 --> Object of class CodeIgniter\Session\Session could not be converted to string
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Views\layout\includes\admin\admin-header.php(187): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\Users\\Dhiraj...', 187, Array)
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Views\layout\admin.php(42): include('C:\\Users\\Dhiraj...')
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\Users\\Dhiraj...')
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(257): CodeIgniter\View\View->render('layout/admin', Array, true)
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/dashboard', Array, true)
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\Admin.php(122): view('admin/dashboard', Array)
+#6 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->Dashboard()
+#7 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#11 {main}
+CRITICAL - 2020-09-30 07:54:52 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-30 07:59:29 --> Invalid file: event.php
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('event.php')
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('event', Array, true)
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\app\Controllers\Home.php(26): view('event', Array)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->Events()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#8 {main}
+CRITICAL - 2020-09-30 09:06:36 --> Cannot call constructor
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\Admin->__construct()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 09:08:08 --> Cannot call constructor
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\Admin->__construct()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 09:08:23 --> Access to undeclared static property: App\Controllers\BaseController::$this
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\Admin->__construct()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 09:08:41 --> Call to undefined function App\Controllers\__construct()
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\Admin->__construct()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 09:10:05 --> Class 'App\Controllers\CI_Controller' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-30 09:13:20 --> Class 'App\Controllers\CI_Controller' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-30 09:13:30 --> Cannot call constructor
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\Admin->__construct()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 09:13:32 --> Cannot call constructor
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\Admin->__construct()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 09:13:37 --> Cannot call constructor
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\Admin->__construct()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 09:13:38 --> Cannot call constructor
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\Admin->__construct()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
+CRITICAL - 2020-09-30 09:18:06 --> Cannot call constructor
+#0 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\Admin->__construct()
+#1 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Dhiraj\Desktop\Knowlexon\ussaodisha.org\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\Dhiraj...')
+#5 {main}
