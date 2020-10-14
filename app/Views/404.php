@@ -81,7 +81,7 @@
 				Sorry! Cannot seem to find the page you were looking for.
 			<?php endif ?>
         </p>
-        <p> <i class="fa fa-long-arrow-left fa-1x" aria-hidden="true"></i>   go back to  <a href="/">Homepage</a></p>
+        <p> <i class="fa fa-long-arrow-left fa-1x" aria-hidden="true"></i>   go back to  <a href="<?= base_url('/');?>">Homepage</a></p>
 	</div>
 </body>
 </html>

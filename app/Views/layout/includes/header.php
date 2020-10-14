@@ -9,19 +9,19 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="<?= base_url('/'); ?>">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/About">About</a>
+        <a class="nav-link" href="<?= base_url('/About'); ?>">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Events">Events</a>
+        <a class="nav-link" href="<?= base_url('/Events'); ?>">Events</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="/Gallery">Gallery</a>
+        <a class="nav-link " href="<?= base_url('/Gallery'); ?>">Gallery</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="/Contact">Contact</a>
+        <a class="nav-link " href="<?= base_url('/Contact'); ?>">Contact</a>
       </li>
     </ul>
   </div>
