@@ -11,7 +11,7 @@ class Auth implements FilterInterface
         $uri = service('uri');
 		if($uri->getSegment(1) == 'Admin'){
 			if(!session()->get('islogged_in')){
-                return redirect()->to('/Admin');
+                return redirect()->to(base_url('/Admin'));
             }else{
 
             }

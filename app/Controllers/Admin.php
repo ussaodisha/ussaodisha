@@ -120,10 +120,10 @@ class Admin extends BaseController
 		if(session()->get('islogged_in')){
 			
 			session()->destroy();
-			return redirect()->to('/Admin');
+			return redirect()->to(base_url('/Admin'));
 			
         }else{
-			return redirect()->to('Admin/Dashboard');
+			return redirect()->to(base_url('Admin/Dashboard'));
 		}
 	}
 

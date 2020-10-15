@@ -2,8 +2,10 @@
 
 <?= $this->section('content') ?>
 
+<section class="Home-page">
 	<div class="text-center">
 		<h1 class="display-1">Homef</h1>
 	</div>
+</section>
 
 <?= $this->endSection()?> 
