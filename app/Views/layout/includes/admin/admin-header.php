@@ -102,7 +102,7 @@
                     </div>
                 </a>
                 <!-- notification item from database -->
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                <a class="dropdown-item text-center small text-gray-500" href="<?= base_url('Admin/Notifications'); ?>">Show All Alerts</a>
             </div>
         </li>
 
@@ -173,7 +173,7 @@
                     </div>
                 </a>
 
-                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                <a class="dropdown-item text-center small text-gray-500" href="<?= base_url('Admin/Messages'); ?>">Read More Messages</a>
             </div>
         </li>
 
@@ -185,22 +185,26 @@
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= strtoupper(session()->get('name').' '.session()->get('surname'));?></span>
-                <img class="img-profile rounded-circle" src="<?= base_url('admin-assets/img/login-page-img.jpg');?>">
+                <?php if(!empty(session()->get('profile-img'))) :?>
+                    <img class="img-profile rounded-circle" src="<?= base_url('Uploads/profiles/'.session()->get('profile-img')); ?>">
+                <?php else: ?>
+                    <img class="img-profile rounded-circle" src="<?= base_url('images/icons/man (1).svg'); ?>">
+                <?php endif; ?>
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="<?= base_url('Admin/Profile'); ?>">
                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                     Profile
                 </a>
-                <a class="dropdown-item" href="#">
+                <!-- <a class="dropdown-item" href="#">
                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                     Settings
                 </a>
                 <a class="dropdown-item" href="#">
                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                     Activity Log
-                </a>
+                </a> -->
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>

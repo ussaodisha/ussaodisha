@@ -20,7 +20,8 @@
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url('admin-assets/css/sb-admin-2.min.css'); ?>" rel="stylesheet">
-
+    <link href="<?= base_url('cust-admin-assets/css/cust-admin-style.css'); ?>" rel="stylesheet">
+    
     <link href="<?= base_url('admin-assets/vendor/datatables/dataTables.bootstrap4.min.css'); ?>" rel="stylesheet">
 
 </head>
@@ -104,6 +105,26 @@
     <!-- Page level custom scripts -->
     <script src="<?= base_url('admin-assets/js/demo/datatables-demo.js'); ?>"></script>
 
+    <script src="<?= base_url('cust-admin-assets/js/cust-main.js'); ?>"></script>
+    <script>
+        (function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+    </script>
     
 
 </body>

@@ -36,8 +36,8 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Link info:</h6>
-                <a class="collapse-item" href="#">Link</a>
-                <a class="collapse-item" href="#">Link</a>
+                <a class="collapse-item" href="<?= base_url('Admin/Users'); ?>">Users</a>
+                <a class="collapse-item" href="<?= base_url('Admin/Posts'); ?>">Posts</a>
             </div>
         </div>
     </li>
@@ -52,9 +52,12 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Link info:</h6>
-                <a class="collapse-item" href="#">Link</a>
-                <a class="collapse-item" href="#">Link</a>
-                <a class="collapse-item" href="#">Link</a>
+                <?php if(session()->get('role') == 1):?>
+                    <a class="collapse-item" href="<?= base_url('Admin/Create_user'); ?>">Creat User</a>
+                <?php endif;?>
+                
+                <a class="collapse-item" href="<?= base_url('Admin/Create_post'); ?>">Creat Post</a>
+                <a class="collapse-item" href="#">Create Notification</a>
                 <a class="collapse-item" href="#">Link</a>
             </div>
         </div>
@@ -78,8 +81,8 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Links:</h6>
-                <a class="collapse-item" href="#">link</a>
-                <a class="collapse-item" href="#">link</a>
+                <a class="collapse-item" href="<?= base_url('Admin/Notifications'); ?>">Notifications</a>
+                <a class="collapse-item" href="<?= base_url('Admin/Messages'); ?>">Messages</a>
                 <a class="collapse-item" href="#">link</a>
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Other links:</h6>

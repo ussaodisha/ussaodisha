@@ -1,20 +1,18 @@
-.Home-page h1 {
-  color: red;
+.header-section .nav-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
 
-.About-page h1 {
-  color: greenyellow;
+.header-section .nav-link:hover {
+  color: greenyellow !important;
 }
 
-.Event-page h1 {
-  color: black;
+.Home-page .carousel-inner .carousel-item {
+  height: 100vh;
+  width: 100%;
 }
 
-.Gallery-page h1 {
-  color: orange;
-}
-
-.Contact-page h1 {
-  color: palegreen;
+.Home-page .short-about {
+  height: 400px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -46,12 +46,31 @@
               <div class="text-center">
                 <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
               </div>
-              <form class="user" action="<?= base_url('Admin/login'); ?>" method="post">
+              <form class="user needs-validation" action="<?= base_url('Admin/login'); ?>" method="post" novalidate>
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-user" name="email" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                  <input type="email" class="form-control form-control-user" name="email" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." required="">
+                  <?php if($validation) :?>
+                    <div class="invalid-feedback">
+                      <?= $validation->getError('email');?>
+                    </div>
+                  <?php else:?>
+                    <div class="valid-feedback">
+                      <small>Looks Good !</small>
+                    </div>
+                  <?php endif;?>
+
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-user" name="pass" id="InputPassword" placeholder="Password">
+                  <input type="password" class="form-control form-control-user" name="pass" id="InputPassword" placeholder="Password" required="">
+                  <?php if($validation) :?>
+                    <div class="invalid-feedback">
+                      <?= $validation->getError('pass');?>
+                    </div>
+                  <?php else:?>
+                    <div class="valid-feedback">
+                      <small>Looks Good !</small>
+                    </div>
+                  <?php endif;?>
                 </div>
                 <!-- <div class="form-group">
                   <div class="custom-control custom-checkbox small">
@@ -61,11 +80,11 @@
                 </div> -->
                 <input type="submit" value="Login" class="btn btn-primary btn-user btn-block">
                 <hr>
-                <?php if($validation): ?>
+                <!-- <?php if($validation): ?>
                   <div class="alert alert-danger" role="alert">
                     <?= $validation->listErrors(); ?>
                   </div>
-                <?php endif; ?>
+                <?php endif; ?> -->
                 <?php if($unsuccess):?>
                   <div class="alert alert-danger" role="alert">
                     <small><?= $unsuccess;	 ?></small>
@@ -116,5 +135,25 @@
 
     <!-- Custom scripts for all pages-->
     <script src="<?= base_url('admin-assets/js/sb-admin-2.min.js');?>"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+    </script>
 
 </body>

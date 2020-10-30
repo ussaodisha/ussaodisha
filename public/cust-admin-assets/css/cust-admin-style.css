@@ -1,0 +1,61 @@
+.profile-page {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.profile-page .profile-image {
+  height: 200px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-page .profile-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-page .image-upload-panel input[type="file"] {
+  display: none;
+}
+
+.profile-page .image-upload-panel label {
+  color: #a29bfe;
+  height: 45px;
+  width: 200px;
+  margin: auto;
+  border: 2px solid #a29bfe;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.profile-page .image-upload-panel label:hover {
+  color: royalblue;
+  border-color: royalblue;
+}
+
+.profile-page .profile-content {
+  height: auto;
+  width: 100%;
+  padding: 10px;
+}
+/*# sourceMappingURL=cust-admin-style.css.map */

@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 
 <section class="Event-page">
-	<div class="row">
+	<div class="row m-0">
 		<div class="col-8">
 			<div class="text-center">
 				<h1 class="display-1">Events</h1>

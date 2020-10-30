@@ -1,13 +1,10 @@
 {
     "version": 3,
-    "mappings": "ACAA,AACI,UADM,CACN,EAAE,CAAA;EACE,KAAK,EAAE,GAAG;CACb;;ACHL,AACI,WADO,CACP,EAAE,CAAA;EACE,KAAK,EAAE,WAAW;CACrB;;ACHL,AACI,WADO,CACP,EAAE,CAAA;EACE,KAAK,EAAE,KAAK;CACf;;ACHL,AACI,aADS,CACT,EAAE,CAAA;EACE,KAAK,EAAE,MAAM;CAChB;;ACHL,AACI,aADS,CACT,EAAE,CAAA;EACE,KAAK,EAAE,SAAS;CACnB",
+    "mappings": "AEAA,AAEI,eAFW,CAEX,SAAS,CAAA;EACL,WAAW,EDHL,QAAQ,EAAE,UAAU;ECI1B,SAAS,EAAE,IAAI;CAClB;;AALL,AAMI,eANW,CAMX,SAAS,AAAA,MAAM,CAAA;EACX,KAAK,EAAE,sBAAsB;CAEhC;;AFEL,AAMQ,UANE,CAEN,eAAe,CAIX,cAAc,CAAA;EACV,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;CAEd;;AAVT,AAaI,UAbM,CAaN,YAAY,CAAA;EACR,MAAM,EAAE,KAAK;CAChB",
     "sources": [
         "style.scss",
-        "_home.scss",
-        "_about.scss",
-        "_events.scss",
-        "_gallery.scss",
-        "_contact.scss"
+        "_fonts.scss",
+        "_includes.scss"
     ],
     "names": [],
     "file": "style.css"

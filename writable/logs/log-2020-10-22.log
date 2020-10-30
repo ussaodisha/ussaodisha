@@ -1,0 +1,198 @@
+CRITICAL - 2020-10-22 09:07:00 --> Call to undefined function App\Controllers\printr()
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->Users()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-10-22 09:07:40 --> Call to undefined function App\Controllers\printr()
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->Users()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-10-22 09:07:41 --> Call to undefined function App\Controllers\printr()
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->Users()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-10-22 09:50:42 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('Admin/users', Array, true)
+#1 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(154): view('Admin/users', Array)
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->Users()
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-22 09:52:15 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('Admin/users', Array, true)
+#1 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(154): view('Admin/users', Array)
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->Users()
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-22 09:53:13 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('Admin/users', Array, true)
+#1 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(154): view('Admin/users', Array)
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->Users()
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-22 13:30:12 --> syntax error, unexpected 'profile_image' (T_STRING), expecting ',' or ')'
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('Admin/profile', Array, true)
+#1 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(182): view('Admin/profile', Array)
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->Profile()
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-22 14:11:45 --> syntax error, unexpected ':'
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('Admin/profile', Array, true)
+#1 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(183): view('Admin/profile', Array)
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->Profile()
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-22 14:11:58 --> syntax error, unexpected ':'
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('Admin/profile', Array, true)
+#1 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(183): view('Admin/profile', Array)
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->Profile()
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-22 15:11:08 --> Call to undefined function form_error()
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/login2', Array, true)
+#2 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(110): view('admin/login2', Array)
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-22 15:11:24 --> Call to undefined function form_error()
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/login2', Array, true)
+#2 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(110): view('admin/login2', Array)
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-22 15:11:25 --> Call to undefined function form_error()
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/login2', Array, true)
+#2 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(110): view('admin/login2', Array)
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-22 15:12:21 --> Call to undefined function set_value()
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/login2', Array, true)
+#2 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(110): view('admin/login2', Array)
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-22 15:12:22 --> Call to undefined function set_value()
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/login2', Array, true)
+#2 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(110): view('admin/login2', Array)
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-22 15:12:37 --> Call to undefined function form_error()
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/login2', Array, true)
+#2 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(110): view('admin/login2', Array)
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-22 15:16:15 --> Call to a member function getError() on null
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/login2', Array, true)
+#2 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(110): view('admin/login2', Array)
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-22 15:16:18 --> Call to a member function getError() on null
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/login2', Array, true)
+#2 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(110): view('admin/login2', Array)
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-22 15:16:46 --> Call to a member function getError() on null
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/login2', Array, true)
+#2 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(110): view('admin/login2', Array)
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-22 15:16:48 --> Call to a member function getError() on null
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/login2', Array, true)
+#2 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(110): view('admin/login2', Array)
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-22 15:18:17 --> Call to a member function hasError() on null
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/login2', Array, true)
+#2 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(110): view('admin/login2', Array)
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-22 21:26:05 --> Call to a member function where() on null
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->delete_user('4')
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-10-22 21:31:06 --> syntax error, unexpected '}'
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('Admin/Users')
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('Admin/Users')
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-22 21:31:11 --> syntax error, unexpected '}'
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-22 21:31:12 --> syntax error, unexpected '}'
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
