@@ -58,4 +58,94 @@
   width: 100%;
   padding: 10px;
 }
+
+.create-post-page .post-image {
+  max-width: 60%;
+  width: auto;
+  height: 350px;
+  margin: 0 auto;
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.create-post-page .post-image img {
+  height: 100%;
+  width: auto;
+  border: 2px dotted grey;
+}
+
+.create-post-page .image-upload-panel input[type="file"] {
+  display: none;
+}
+
+.create-post-page .image-upload-panel label {
+  color: #a29bfe;
+  height: 35px;
+  width: 150px;
+  margin: auto;
+  border: 2px solid #a29bfe;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.create-post-page .image-upload-panel label:hover {
+  color: royalblue;
+  border-color: royalblue;
+}
+
+.create-gallery-page .post-image {
+  max-width: 60%;
+  width: auto;
+  height: 350px;
+  margin: 0 auto;
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.create-gallery-page .post-image img {
+  height: 100%;
+  width: auto;
+  border: 2px dotted grey;
+}
+
+.create-gallery-page .image-upload-panel input[type="file"] {
+  display: none;
+}
+
+.create-gallery-page .image-upload-panel label {
+  color: #a29bfe;
+  height: 35px;
+  width: 150px;
+  margin: auto;
+  border: 2px solid #a29bfe;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.create-gallery-page .image-upload-panel label:hover {
+  color: royalblue;
+  border-color: royalblue;
+}
 /*# sourceMappingURL=cust-admin-style.css.map */

@@ -1,4 +1,8 @@
-<?php namespace App\Controllers;
+<?php 
+
+namespace App\Controllers;
+use App\Models\Gallery;
+use App\Models\Posts;
 
 class Home extends BaseController
 {
@@ -20,17 +24,22 @@ class Home extends BaseController
 
 	public function Events()
 	{
+		$postmodel = new Posts;
 		$data = [
-			'title' => 'Events'
+			'title' => 'Events',
+			'eventdata'=>$postmodel->findAll(),
 		];
 		return view('events',$data);
 	}
 
 	public function Gallery()
 	{
+		$gallerymodel = new Gallery;
 		$data = [
-			'title' => 'Gallery'
+			'title' => 'Gallery',
+			'galleydata'=>$gallerymodel->findAll(),
 		];
+		
 		return view('gallery',$data);
 	}
 

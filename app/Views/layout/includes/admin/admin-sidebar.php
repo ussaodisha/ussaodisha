@@ -30,14 +30,15 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
             aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-cog"></i>
-            <span>links</span>
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Data</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Link info:</h6>
+                <h6 class="collapse-header">Data info:</h6>
                 <a class="collapse-item" href="<?= base_url('Admin/Users'); ?>">Users</a>
                 <a class="collapse-item" href="<?= base_url('Admin/Posts'); ?>">Posts</a>
+                <a class="collapse-item" href="<?= base_url('Admin/Gallery'); ?>">Gallery</a>
             </div>
         </div>
     </li>
@@ -46,19 +47,19 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
             aria-expanded="true" aria-controls="collapseUtilities">
-            <i class="fas fa-fw fa-wrench"></i>
-            <span>Link</span>
+            <i class="fas fa-fw fa-plus-circle"></i>
+            <span>Create New</span>
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Link info:</h6>
+                <h6 class="collapse-header">Create info:</h6>
                 <?php if(session()->get('role') == 1):?>
                     <a class="collapse-item" href="<?= base_url('Admin/Create_user'); ?>">Creat User</a>
                 <?php endif;?>
                 
                 <a class="collapse-item" href="<?= base_url('Admin/Create_post'); ?>">Creat Post</a>
-                <a class="collapse-item" href="#">Create Notification</a>
-                <a class="collapse-item" href="#">Link</a>
+                <a class="collapse-item" href="<?= base_url('Admin/Create_gallery'); ?>">Create Gallery</a>
+                <!-- <a class="collapse-item" href="#">Link</a> -->
             </div>
         </div>
     </li>
@@ -81,13 +82,13 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Links:</h6>
-                <a class="collapse-item" href="<?= base_url('Admin/Notifications'); ?>">Notifications</a>
+                <!-- <a class="collapse-item" href="<?= base_url('Admin/Notifications'); ?>">Notifications</a>
                 <a class="collapse-item" href="<?= base_url('Admin/Messages'); ?>">Messages</a>
-                <a class="collapse-item" href="#">link</a>
+                <a class="collapse-item" href="#">link</a> -->
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Other links:</h6>
-                <a class="collapse-item" href="#">Link</a>
-                <a class="collapse-item" href="#">Link</a>
+                <!-- <a class="collapse-item" href="#">Link</a>
+                <a class="collapse-item" href="#">Link</a> -->
             </div>
         </div>
     </li>

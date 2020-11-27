@@ -1,5 +1,117 @@
 .Event-page{
-    h1{
-        color: black;
+    
+    .Event-panel{
+        width: 95%;
+        margin: 0 auto;
+
+        .Event-heading{
+            padding: 20px;
+            margin-bottom: 10px;
+            
+            h1{
+                text-align: center;
+                font-weight: 600;
+            }
+
+            p{
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+
+        .Event-panel-box{
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
+
+            .primary-event-section{
+                width: 46%;
+                height: auto;
+
+                .Event-box{
+                    width: 100%;
+                    // background-color: orange;
+                    margin: 10px;
+                    box-sizing: border-box;
+                    padding:  20px 25px 25px 25px;
+                    border: 1px solid rgba(128, 128, 128,.2);
+                    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+                    border-radius: 10px;
+    
+        
+                    .Event-image-box{
+                        height: 250px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        box-sizing: border-box;
+
+                        img{
+                            max-height: 100%;
+                            min-width: auto;
+                            object-fit: cover;
+                            vertical-align: bottom;
+                            margin: 0 auto;
+                            // padding: 10px;
+                        }
+                    }
+        
+                    .Event-content-box{
+                        margin-top: 10px;
+    
+                        .content-area-text{
+                            height: 80px;
+                            overflow: hidden;
+
+                            h5{
+                                font-weight: 600;
+                            }
+    
+                            p{
+                                width: 100%;
+                            }
+                        }
+    
+                        .readmore-btn{
+                            text-decoration: none;
+                            cursor: pointer;
+                            height: 50px;
+                            width: 100px;
+                            margin-top: 10px;
+                            padding: 8px 15px;
+                            font-size: 14px;
+                            color: orange;
+                            border: 1px solid orange;
+                            border-radius: 20px;
+                            border-top-left-radius: 0px;
+                            transition: all .5s;
+                        }
+
+                        .readmore-btn:hover{
+                            color: #2ed573;
+                            border-color: #2ed573;
+                            border-bottom-left-radius: 20px;
+                            border-top-right-radius: 20px;
+                            border-bottom-right-radius: 0px;
+                            transition: all .5s;
+                        }
+                    }
+    
+                    .Event-content-box.showContent{
+                    }
+    
+                    .Event-content-box.showContent .content-area-text{
+                        height: auto;
+                    }
+                }
+            }
+
+            .no-data-found-panel{
+                width: 100%;
+                margin-bottom: 55px;
+            }
+        }
     }
 }

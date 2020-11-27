@@ -2,6 +2,7 @@
 namespace App\Controllers;
 use App\Models\Users;
 use App\Models\Posts;
+use App\Models\Gallery;
 use CodeIgniter\Controller;
 
 class Admin extends BaseController
@@ -165,6 +166,21 @@ class Admin extends BaseController
 		return view('Admin/posts',$data);
 	}
 
+	public function Gallery(){
+		$data =[];
+		$gallerymodel = new Gallery();
+		// $data = [
+		// 	'gallerydata' => $gallerymodel->join('Users', 'Users.user_id = Posts.Post_owner','left')
+		// 							->orderBy('Post_id','desc')
+		// 							->findAll(),
+		// ];
+
+		$data = [
+			'gallerydata' => $gallerymodel->findAll(),
+		];
+		return view('Admin/gallery',$data);
+	}
+
 	public function Notifications(){
 		return view('Admin/notifications');
 	}
@@ -312,19 +328,147 @@ class Admin extends BaseController
 	}
 
 	public function create_post(){
-		return view('Admin/create_post');
+		$data=[];
+		$postmodel = new Posts();
+		
+		if($this->request->getMethod() == 'post'){
+			
+			$title = $this->request->getpost('post_title');
+			$description = $this->request->getpost('post_description');
+			$newfile = $this->request->getFile('postimgfile');
+			$date = date("d-M-Y");
+			$rules = [
+				'post_title' 		=> 'required',
+				'post_description' 	=> 'required',
+			];
+
+			if(!$this->validate($rules)){
+				$data['validation'] = $this->validator;
+			}else{
+				
+				if($newfile->isValid()){
+					$randomfilename = $newfile->getRandomName();
+				}else{
+					$data = [
+						'imgFailed' => "Images file not support",
+					];
+				}
+
+					$newData = [
+						'Post_title'=>$title,
+						'Post_description'=>$description,
+						'Post_date'=>$date,
+						'Post_owner'=>session()->get('user_id'),
+						'Post_image'=>$randomfilename,
+					];
+
+					if($postmodel->save($newData)){
+						$newfile->move(ROOTPATH.'public/Uploads/post-uploads/',$randomfilename);
+						$session = session();
+						$session->setFlashdata('success','Post created Successfully');
+						return redirect()->to(base_url('Admin/Create_post'));
+					
+					}else{
+						
+						$session = session();
+						$session->setFlashdata('unsuccess','Post create Unsuccessful');
+						return redirect()->to(base_url('Admin/Create_post'));
+					}
+			}
+		}
+		// return view('Admin/Create_user',$data);
+		return view('Admin/create_post',$data);
+	}
+
+	public function create_gallery(){
+		$data=[];
+		$gallerymodel = new Gallery();
+		
+		if($this->request->getMethod() == 'post'){
+			
+			$newfile = $this->request->getFile('uploadimgfile');
+			$date = date("d-M-Y");
+
+			if($newfile->isValid()){
+				$randomfilename = $newfile->getRandomName();
+				$newData = [
+					'image_name'=>$randomfilename,
+					'date'=>$date,
+				];
+
+				if($gallerymodel->save($newData)){
+					$newfile->move(ROOTPATH.'public/Uploads/gallery-uploads/',$randomfilename);
+					$session = session();
+					$session->setFlashdata('success','Image Uploaded Successfully');
+					return redirect()->to(base_url('Admin/Create_gallery'));
+				
+				}else{
+					
+					$session = session();
+					$session->setFlashdata('unsuccess','Image Upload Unsuccessful');
+					return redirect()->to(base_url('Admin/Create_gallery'));
+				}
+
+			}else{
+				$data = [
+					'imgFailed' => "Images file not support",
+				];
+			}
+		}
+		return view('Admin/create_gallery');
 	}
 
 	public function delete_user($id){
+		
 		$usermodel = new Users();
+		$userdata = $usermodel->where('user_id',$id)->find();
 		if($usermodel->where('user_id',$id)->delete()){
+
+			unlink(ROOTPATH.'public/Uploads/profiles/'.$userdata[0]['profile_image']);
 			$session = session();
 			$session->setFlashdata('success','User Deleted Successfully');
 			return redirect()->to(base_url('/Admin/Users'));
+
 		}else{
 			$session = session();
 			$session->setFlashdata('unsuccess','Deletion Failed ! Try Again');
 			return redirect()->to(base_url('/Admin/Users'));
+		}
+
+	}
+
+	public function delete_post($id){
+		
+		$postmodel = new Posts();
+		$postdata = $postmodel->where('Post_id',$id)->find();
+
+		if($postmodel->where('Post_id',$id)->delete()){
+			unlink(ROOTPATH.'public/Uploads/post-uploads/'.$postdata[0]['Post_image']);
+			$session = session();
+			$session->setFlashdata('success','Post Deleted Successfully');
+			return redirect()->to(base_url('/Admin/Posts'));
+		}else{
+			$session = session();
+			$session->setFlashdata('unsuccess','Deletion Failed ! Try Again');
+			return redirect()->to(base_url('/Admin/Posts'));
+		}
+
+	}
+
+	public function delete_gallery($id){
+		
+		$gallerymodel = new Gallery();
+		$gallerydata = $gallerymodel->where('gallery_id',$id)->find();
+
+		if($gallerymodel->where('gallery_id',$id)->delete()){
+			unlink(ROOTPATH.'public/Uploads/gallery-uploads/'.$gallerydata[0]['image_name']);
+			$session = session();
+			$session->setFlashdata('success','Gallery Item Deleted Successfully');
+			return redirect()->to(base_url('/Admin/Gallery'));
+		}else{
+			$session = session();
+			$session->setFlashdata('unsuccess','Deletion Failed ! Try Again');
+			return redirect()->to(base_url('/Admin/Gallery'));
 		}
 
 	}

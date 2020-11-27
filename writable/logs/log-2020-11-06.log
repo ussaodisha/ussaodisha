@@ -1,0 +1,14 @@
+CRITICAL - 2020-11-06 02:30:02 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->create_post()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-06 02:31:19 --> Call to a member function save() on null
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->create_post()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}

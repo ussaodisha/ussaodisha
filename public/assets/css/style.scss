@@ -1,29 +1,17 @@
 // Import Custom frontend style files
-
 @import "fonts";
-@import "includes";
-// @import "home";
-// @import "about";
-// @import "events";
-// @import "gallery";
-// @import "contact";
 
-
-.Home-page{
-
-    .carousel-inner{
-        // background-color: greenyellow;
-
-
-        .carousel-item{
-            height: 100vh;
-            width: 100%;
-            // background-color: red;
-        }
-    }
-
-    .short-about{
-        height: 400px;
-    }
-    
+*{
+    font-family: $font-poppins;
 }
+@import "includes";
+@import "home";
+@import "about";
+@import "events";
+@import "gallery";
+@import "contact";
+
+// Responsive Media Css
+
+@import "medium";
+@import "small";

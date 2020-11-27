@@ -11,8 +11,9 @@
 
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
-    <div class="card-header py-3">
+    <div class="card-header py-3 d-flex justify-content-between align-items-center">
         <h6 class="m-0 font-weight-bold text-primary">Posts Table</h6>
+        <a href="<?= base_url('Admin/Create_post'); ?>" class="btn btn-sm btn-primary">Create post</a>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -36,7 +37,7 @@
                         <td><?= ucwords($value['Name']); ?></td>
                         <td class="d-flex justify-content-around align-items-center">
                             <!-- <a href="" class="btn btn-sm btn-warning">Make admin</a> -->
-                            <a href="#" class="btn btn-danger btn-circle btn-sm">
+                            <a href="<?= base_url('Admin/delete_post/'.$value['Post_id']); ?>" class="btn btn-danger btn-circle btn-sm">
                                 <i class="fas fa-trash"></i>
                             </a>
                         </td>

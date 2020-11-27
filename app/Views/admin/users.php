@@ -32,7 +32,7 @@
     <div class="card-header py-3 d-flex justify-content-between align-items-center">
         <h6 class="m-0 font-weight-bold text-primary">Users Table</h6>
         <?php if(session()->get('role') == 1):?>
-            <a href="<?= base_url('Admin/create_user'); ?>" class="btn btn-sm btn-primary">Create User</a>
+            <a href="<?= base_url('Admin/Create_user'); ?>" class="btn btn-sm btn-primary">Create User</a>
         <?php endif;?>
     </div>
     <div class="card-body">

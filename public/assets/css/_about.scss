@@ -1,5 +1,395 @@
-.About-page{
-    h1{
-        color: greenyellow;
+.About-page {
+
+    .about-background {
+        background-image: url('images/a.jpg');
+        background-color: white;
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+
+        span {
+            height: auto;
+            width: 50%;
+            // background-color: white;
+            margin-top: 80px;
+            color: white;
+            font-size: 4rem;
+            font-weight: 600;
+            opacity: 1;
+            display: flex;
+            justify-content: center;
+            font-family: $font-roboto;
+
+        }
+    }
+
+    .about-content {
+        height: 400px;
+        width: 100%;
+        background-color: #f1f2f6;
+        position: relative;
+
+        .about-content-layer {
+            position: absolute;
+            height: auto;
+            width: 75%;
+            margin: 0 auto;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -200px);
+            ;
+            background-color: #f1f2f6;
+            box-sizing: border-box;
+            padding: 50px 60px;
+            border-top-left-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                margin-bottom: 5px;
+                font-weight: 600;
+            }
+
+            h3 {
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 18px;
+                color: #57606f;
+                letter-spacing: .1px;
+                line-height: 1.6;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .primary-content {
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+
+        .vision-mission-panel {
+            margin-top: 30px;
+
+            .vision-section {
+                height: auto;
+                width: 100%;
+                margin: 30px 0;
+                box-sizing: border-box;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .vam-panel {
+                    width: 100%;
+                    height: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    box-sizing: border-box;
+                    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+
+
+                    .vam-panel-text {
+                        width: auto;
+                        height: 100px;
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+                        padding: 10px 20px;
+
+                        p {
+                            text-align: center;
+                            font-size: 18px;
+                        }
+                    }
+
+                    h2 {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .core-values {
+            margin-top: 40px;
+
+            .core-values-heading {
+                margin-bottom: 15px;
+                text-align: center;
+
+                h2 {
+                    font-weight: 600;
+                }
+            }
+
+            .core-values-content {
+
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 20px;
+
+                ol {
+                    width: 100%;
+                    margin: 0 auto;
+
+                    li {
+
+                        p {
+                            text-align: start;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            .core-values-text {
+                width: 90%;
+                margin: 0 auto;
+
+                p {
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .major-milestones-panel {
+            margin-top: 80px;
+
+            .major-milestones-heading {
+
+                h2 {
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+            }
+
+            ul {
+                width: 80%;
+                margin: 0 auto;
+
+                li {
+                    font-size: 18px;
+                    list-style: square;
+                }
+            }
+        }
+
+        .beyond-projects {
+            margin-top: 40px;
+
+            .beyond-projects-panel {
+
+                .beyond-projects-heading {
+                    margin-bottom: 20px;
+
+                    h2 {
+                        font-weight: 600;
+                        text-align: center;
+                    }
+                }
+
+                .beyond-projects-content {
+
+                    p {
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+
+                .beyond-projects-list {
+                    margin-top: 30px;
+
+                    .beyond-projects-list-heading {
+                        margin-bottom: 20px;
+
+                        h2 {
+                            text-align: center;
+                        }
+                    }
+
+                    .beyond-projects-list-content {
+
+                        ul {
+                            width: 80%;
+                            margin: 0 auto;
+
+                            li {
+                                list-style: square;
+
+                                p {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .team-section {
+
+            margin-top: 80px;
+
+            .heading {
+                height: auto;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .team-image-box {
+                height: 350px;
+                width: 75%;
+                background-color: #f1f2f6;
+                margin: 0 auto;
+                margin-top: 50px;
+                position: relative;
+                box-shadow: 0 8px 8px rgba(0, 0, 0, 0.10);
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .img-caption {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    // background-color: #f1f2f6;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transform: scaleY(0);
+                    transform-origin: bottom;
+                    transition: transform 0.3s;
+
+                    .layer {
+                        position: absolute;
+                        opacity: .4;
+                        background-color: #4cd137;
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    .layer-heading {
+                        // position: absolute;
+                        z-index: 2;
+                        color: white;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+
+                .img-icons {
+                    height: 20%;
+                    width: 100%;
+                    display: flex;
+                    position: absolute;
+                    top: 80%;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    background-color: #57606f;
+                    transform: scaleY(0);
+                    transform-origin: bottom;
+                    transition: transform 0.3s;
+
+                    .icon {
+                        color: whitesmoke;
+                        font-size: 18px;
+                        padding: 5px 10px;
+                        border: 2px solid transparent;
+                        border-radius: 50%;
+                        transition: all .3s;
+                    }
+
+                    .icon:hover {
+                        transition: all .3s;
+                        // border-top-right-radius: 0;
+                    }
+
+                    .icon:nth-child(1):hover {
+                        color: #4cd137;
+                        border-color: #4cd137;
+                    }
+
+                    .icon:nth-child(2):hover {
+                        color: tomato;
+                        border-color: tomato;
+                    }
+
+                    .icon:nth-child(3):hover {
+                        color: royalblue;
+                        border-color: royalblue;
+                    }
+
+                }
+            }
+
+            .team-image-box:hover{
+                box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+            }
+
+            .team-image-box:hover .img-caption {
+                transform: scaleY(1);
+                transition: transform 0.3s;
+            }
+
+            .team-image-box:hover .img-icons {
+                transform: scaleY(1);
+                transition: transform 0.3s;
+            }
+        }
+
+        .info-section {
+            height: 100px;
+            width: 100%;
+        }
+    }
+
+    .bottom-background {
+        background-image: url('images/ivan-bandura-UIcxKsUwNjo-unsplash.jpg');
+        background-color: white;
+        height: 200px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
     }
 }

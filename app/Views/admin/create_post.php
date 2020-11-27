@@ -4,25 +4,68 @@
 
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">New User</h1>
+    <h1 class="h3 mb-0 text-gray-800">New Post</h1>
     <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
         <i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
 </div>
 
-<div class="alert alert-info alert-dismissible fade show" role="alert">
+<?php if(session()->get('unsuccess')):?>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Unsuccess!</strong> <?= session()->get('unsuccess'); ?>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<?php endif; ?>
+
+<?php if(session()->get('success')):?>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success!</strong> <?= session()->get('success'); ?>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<?php endif; ?>
+
+<!-- <div class="alert alert-info alert-dismissible fade show" role="alert">
     <strong>Reminder !</strong> Profile incomplete please fill remaining details !
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
     </button>
-</div>
+</div> -->
     
 
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
-    <div class="card-header py-3">
-        <h4 class="m-0 font-weight-bold text-primary">Create User</h4>
+    <div class="card-header py-3 ">
+        <h4 class="m-0 font-weight-bold text-primary">Create Post</h4>
+        
     </div>
     <div class="card-body">
+        <div class="create-post-page">
+            <form action="<?= base_url('Admin/create_post'); ?>" method="post" enctype="multipart/form-data">
+                <div class="post-image">
+                    <img id="blah" src="" alt="">
+                </div>
+                <div class="image-upload-panel mt-4 ">
+                        <input type="file" name="postimgfile" id="imgInp" accept="image/*">
+                        <label for="imgInp">Choose a photo</label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="postTitle">Post Title</label>
+                    <input type="text" name="post_title" id="postTitle" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="postDescription">Post Description</label>
+                    <textarea name="post_description" id="postDescription" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save Post" class="btn btn-info">
+                </div>
+            </form>
+
+        </div>
     </div>
 </div>
 

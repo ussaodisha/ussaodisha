@@ -3,7 +3,7 @@
 
 <head>
     <!-- title -->
-    <title><?= $title ?></title>
+    <title>Admin</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -15,19 +15,22 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
     <!-- Custom fonts for this template-->
-    <link href="<?= base_url('admin-assets/vendor/fontawesome-free/css/all.min.css'); ?>" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="<?= base_url('admin-assets/vendor/fontawesome-free/css/all.min.css'); ?>" rel="stylesheet"
+        type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url('admin-assets/css/sb-admin-2.min.css'); ?>" rel="stylesheet">
     <link href="<?= base_url('cust-admin-assets/css/cust-admin-style.css'); ?>" rel="stylesheet">
-    
+
     <link href="<?= base_url('admin-assets/vendor/datatables/dataTables.bootstrap4.min.css'); ?>" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
-    
+
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -91,10 +94,10 @@
     <!-- Bootstrap core JavaScript-->
     <script src="<?= base_url('admin-assets/vendor/jquery/jquery.min.js'); ?>"></script>
     <script src="<?= base_url('admin-assets/vendor/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
-    
+
     <!-- Core plugin JavaScript-->
     <script src="<?= base_url('admin-assets/vendor/jquery-easing/jquery.easing.min.js'); ?>"></script>
-    
+
     <!-- Custom scripts for all pages-->
     <script src="<?= base_url('admin-assets/js/sb-admin-2.min.js'); ?>"></script>
 
@@ -107,25 +110,25 @@
 
     <script src="<?= base_url('cust-admin-assets/js/cust-main.js'); ?>"></script>
     <script>
-        (function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
     </script>
-    
+
 
 </body>
 
