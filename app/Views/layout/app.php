@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
-
+    <link rel="stylesheet" href="<?= base_url('assets/css/main.css') ?>">
 </head>
 
 <body>
@@ -40,6 +40,12 @@
         </div>
     </div>
 
+
+    <div id="scrolltotop_parent" class="scrolltotop_hide_onload">
+        <div tabindex="0" id="scrolltotop_arrow">
+        </div>
+    </div>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="<?= base_url('assets/js/jquery.js') ?>"></script>
 
@@ -50,9 +56,15 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
     </script>
+
+    <!-- animation on scroll library -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- show more script -->
     <script src="<?= base_url('assets/js/home-show-more.js') ?>"></script>
+    
     <!-- <script src="<?= base_url('assets/js/lightbox.js') ?>"></script> -->
+    <script src="<?= base_url('assets/js/scroll-to-top.js') ?>"></script>
     <script src="<?= base_url('assets/js/aos.js') ?>"></script>
     <script src="<?= base_url('assets/js/main.js') ?>"></script>
 

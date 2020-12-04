@@ -9,19 +9,19 @@
     </button>
     <div class="collapse navbar-collapse p-0" id="navbarNav">
       <ul class="navbar-nav ml-auto head-navbar text-center p-0 m-0">
-        <li class="nav-item active-nav">
+        <li class="nav-item mr-3 active-nav">
           <a class="nav-link" href="<?= base_url('/'); ?>">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mr-3">
           <a class="nav-link" href="<?= base_url('/About'); ?>">About</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mr-3">
           <a class="nav-link" href="<?= base_url('/Events'); ?>">Events</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mr-3">
           <a class="nav-link " href="<?= base_url('/Gallery'); ?>">Gallery</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mr-3">
           <a class="nav-link " href="<?= base_url('/Contact'); ?>">Contact</a>
         </li>
       </ul>

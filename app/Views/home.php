@@ -69,7 +69,7 @@
                 <div class="short-about-content">
                     <h1>USSA</h1>
                     <p>Udra Society for secondary Agriculture</p>
-                    <p>In a spirit of openness and sensitivity thresholded its footprint, believing in the ethos that
+                    <p class="text-justify">In a spirit of openness and sensitivity thresholded its footprint, believing in the ethos that
                         nothing is written in the stone and thus its interventions have extended to the cause of making
                         a more enabled and empowered society through putting the best effort. Through its primary
                         concern are seen as promoting and establishing spaces for secondary agriculture in the tribal
@@ -98,7 +98,7 @@
                         </div>
                         <div class="content-area">
                             <h5>Training and Capacity Building</h5>
-                            <div class="content-area-text collapse" id="collapseExample">
+                            <div class="content-area-text ">
                                 <p>USSA recognizes that cutting edge to development heavily depends upon increased human
                                     potentials and thus regular, specific and need-based training and capacity building
                                     activities are offered to various stakeholders to update them with professional work
@@ -230,7 +230,7 @@
         </div>
     </div>
 
-    <div class="testimonial-section">
+    <div class="testimonial-section" data-aos="fade-up">
         <div class="testimonial-section-heading">
             <h2>testimonial-section</h2>
         </div>
@@ -326,12 +326,20 @@
     </div>
 
     <div class="bottom-background">
+        <div class="join-us-panel">
+            <div class="join-us-form">
+                <form action="<?= base_url('Home/subscribe_emails')?>" method="POST">
+                    <input type="email" name="email" id="email" class="join-us-email" required>
+                    <div class="join-btn-box">
+                        <input type="submit" value="Join Us" name="joinnow" class="join-us-btn">
+                    </div>
+                </form>
+            </div>
+        </div>
         <div class="bottom-background-content">
             <h1>Lorem, ipsum dolor.</h1>
         </div>
-        <div class="join-button">
-            <a href="<?= base_url('/Contact'); ?>">Join Now</a>
-        </div>
+        
     </div>
 </section>
 

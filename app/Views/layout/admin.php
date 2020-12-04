@@ -109,7 +109,7 @@
     <script src="<?= base_url('admin-assets/js/demo/datatables-demo.js'); ?>"></script>
 
     <script src="<?= base_url('cust-admin-assets/js/cust-main.js'); ?>"></script>
-    <script>
+    <!-- <script>
         (function () {
             'use strict';
             window.addEventListener('load', function () {
@@ -127,7 +127,7 @@
                 });
             }, false);
         })();
-    </script>
+    </script> -->
 
 
 </body>

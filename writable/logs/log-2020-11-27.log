@@ -34,3 +34,14 @@ CRITICAL - 2020-11-27 09:37:47 --> Unable to connect to the database.
 #7 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
 #9 {main}
+CRITICAL - 2020-11-27 20:51:48 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ussa\app\Controllers\Home.php(30): CodeIgniter\Model->findAll()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->Events()
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}

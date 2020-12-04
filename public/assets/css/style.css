@@ -502,8 +502,8 @@
   height: 0px;
   display: none;
   overflow: hidden;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 5s;
+  transition: all 5s;
 }
 
 .Home-page .trust-area-of-intervension-section .trust-area-of-intervension-content .tai-content-panel .content-area a {
@@ -701,24 +701,74 @@
   position: relative;
 }
 
-.Home-page .bottom-background .join-button a {
-  height: 60px;
-  width: 200px;
-  background-color: transparent;
-  outline: none;
-  border: 3px solid orange;
-  border-radius: 50px;
-  color: orange;
-  font-size: 20px;
-  font-weight: 600;
-  padding: 10px 40px;
-  text-decoration: none;
+.Home-page .bottom-background .join-us-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.Home-page .bottom-background .join-button a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: white;
+.Home-page .bottom-background .join-us-panel .join-us-form {
+  width: 600px;
+  height: 60px;
+}
+
+.Home-page .bottom-background .join-us-panel .join-us-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Home-page .bottom-background .join-us-panel .join-us-form form .join-us-email {
+  height: 50px;
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-right: 10px;
+}
+
+.Home-page .bottom-background .join-us-panel .join-us-form form .join-btn-box {
+  height: 50px;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Home-page .bottom-background .join-us-panel .join-us-form form .join-btn-box .join-us-btn {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 2px solid white;
+  background-color: orange;
   color: white;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .About-page .about-background {
@@ -1269,7 +1319,7 @@
 }
 
 .Event-page .Event-panel .Event-panel-box .primary-event-section .Event-box .Event-content-box .content-area-text {
-  height: 80px;
+  height: 75px;
   overflow: hidden;
 }
 
@@ -1279,6 +1329,7 @@
 
 .Event-page .Event-panel .Event-panel-box .primary-event-section .Event-box .Event-content-box .content-area-text p {
   width: 100%;
+  text-align: justify;
 }
 
 .Event-page .Event-panel .Event-panel-box .primary-event-section .Event-box .Event-content-box .readmore-btn {
@@ -1721,13 +1772,77 @@
   }
   .Home-page .bottom-background {
     height: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .Home-page .bottom-background .bottom-background-content h1 {
     font-size: 25px;
   }
-  .Home-page .bottom-background .join-button a {
-    border: 2px solid orange;
-    padding: 10px 30px;
+  .Home-page .bottom-background .join-us-panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Home-page .bottom-background .join-us-panel .join-us-form {
+    width: 500px;
+    height: 60px;
+  }
+  .Home-page .bottom-background .join-us-panel .join-us-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Home-page .bottom-background .join-us-panel .join-us-form form .join-us-email {
+    height: 40px;
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-right: 10px;
+  }
+  .Home-page .bottom-background .join-us-panel .join-us-form form .join-btn-box {
+    height: 40px;
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Home-page .bottom-background .join-us-panel .join-us-form form .join-btn-box .join-us-btn {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 2px solid white;
+    background-color: orange;
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
   }
   .footer-section .footer .footer-panel {
     padding: 20px 0px;
@@ -2220,6 +2335,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -2231,23 +2350,63 @@
   .Home-page .bottom-background .bottom-background-content h1 {
     font-size: 16px;
   }
-  .Home-page .bottom-background .join-button a {
-    height: 20px;
-    width: 100px;
-    background-color: transparent;
-    outline: none;
-    border: 1px solid orange;
-    border-radius: 50px;
-    color: orange;
-    font-size: 14px;
-    font-weight: normal;
-    padding: 5px 10px;
-    text-decoration: none;
+  .Home-page .bottom-background .join-us-panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .Home-page .bottom-background .join-button a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: white;
+  .Home-page .bottom-background .join-us-panel .join-us-form {
+    width: 350px;
+    height: 30px;
+  }
+  .Home-page .bottom-background .join-us-panel .join-us-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Home-page .bottom-background .join-us-panel .join-us-form form .join-us-email {
+    height: 30px;
+    width: 75%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-right: 5px;
+  }
+  .Home-page .bottom-background .join-us-panel .join-us-form form .join-btn-box {
+    height: 30px;
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Home-page .bottom-background .join-us-panel .join-us-form form .join-btn-box .join-us-btn {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 2px solid white;
+    background-color: orange;
     color: white;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
   }
   .footer-section .footer {
     height: auto;

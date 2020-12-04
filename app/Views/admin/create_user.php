@@ -7,6 +7,7 @@
     <h1 class="h3 mb-0 text-gray-800">New User</h1>
     <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
         <i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
+        
 </div>
 <!-- new registration success msg -->
 <?php if(session()->get('success')):?>
@@ -17,6 +18,7 @@
         </button>
     </div>
 <?php endif; ?>
+
 <?php if($User_Exist):?>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <strong>Alert!</strong> <small><?= $User_Exist ?></small>
@@ -28,12 +30,13 @@
 
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
-    <div class="card-header py-3">
+    <div class="card-header py-3 d-flex justify-content-between align-items-center">
         <h4 class="m-0 font-weight-bold text-primary">Create User</h4>
+        <a href="<?= base_url('Admin/Users'); ?>" class="btn btn-sm btn-primary">Show Users</a>
     </div>
     <div class="card-body">
         <div class="profile-page">
-            <form class="was-validated" action="<?= base_url('Admin/Create_user'); ?>" method="post" enctype="multipart/form-data" novalidate>
+            <form class="" action="<?= base_url('Admin/Create_user'); ?>" method="post" enctype="multipart/form-data" novalidate>
             <div class="row m-0 p-0"> 
                 <div class="col-sm-12 col-md-9 col-lg-9 p-0 d-flex justify-content-center">
                     <div class="profile-content">
@@ -42,69 +45,39 @@
                             <div class="form-row">
                               <div class="form-group col-md-6">
                                 <label for="inputName">First Name</label>
-                                <input type="text" class="form-control" name="first_name" id="inputName" placeholder="Enter Name" required="">
+                                <input type="text" class="form-control" name="first_name" id="inputName" placeholder="Enter Name" >
                                 <?php if($validation) :?>
-                                    <div class="invalid-feedback">
-                                    <?= $validation->getError('first_name');?>
-                                    </div>
-                                <?php else:?>
-                                    <div class="valid-feedback">
-                                        <span>Looks Good !</span>
-                                    </div>
+                                    <small class="text-danger"><?= $validation->getError('first_name');?></small>
                                 <?php endif;?>
                               </div>
                               <div class="form-group col-md-6">
                                 <label for="inputLastname">Last Name</label>
-                                <input type="text" class="form-control" name="last_name" id="inputLastname" placeholder="Enter Surname" required="">
+                                <input type="text" class="form-control" name="last_name" id="inputLastname" placeholder="Enter Surname" >
                                 <?php if($validation) :?>
-                                    <div class="invalid-feedback">
-                                    <?= $validation->getError('last_name');?>
-                                    </div>
-                                <?php else:?>
-                                    <div class="valid-feedback">
-                                    <span>Looks Good !</span>
-                                    </div>
+                                    <small class="text-danger"><?= $validation->getError('last_name');?></small>
                                 <?php endif;?>
                               </div>
                             </div>
                             <div class="form-group">
                               <label for="inputemail">Email</label>
-                              <input type="email" class="form-control" name="email" id="inputemail" placeholder="Email" required="">
+                              <input type="email" class="form-control" name="email" id="inputemail" placeholder="Email" >
                               <?php if($validation) :?>
-                                    <div class="invalid-feedback">
-                                    <?= $validation->getError('email');?>
-                                    </div>
-                                <?php else:?>
-                                    <div class="valid-feedback">
-                                    <span>Looks Good !</span>
-                                    </div>
+                                   <small class="text-danger"><?= $validation->getError('email');?></small>
                                 <?php endif;?>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                   <label for="inputpassword">Password</label>
-                                  <input type="password" class="form-control" name="password" id="inputpassword" placeholder="Password" required="">
+                                  <input type="password" class="form-control" name="password" id="inputpassword" placeholder="Password" >
                                   <?php if($validation) :?>
-                                    <div class="invalid-feedback">
-                                    <?= $validation->getError('password');?>
-                                    </div>
-                                <?php else:?>
-                                    <div class="valid-feedback">
-                                    <span>Looks Good !</span>
-                                    </div>
+                                    <small class="text-danger"><?= $validation->getError('password');?></small>
                                 <?php endif;?>
                                 </div>
                                 <div class="form-group col-md-6">
                                   <label for="confirmpassword">Confirm Password</label>
-                                  <input type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" required="">
+                                  <input type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" >
                                   <?php if($validation) :?>
-                                    <div class="invalid-feedback">
-                                    <?= $validation->getError('confirmpassword');?>
-                                    </div>
-                                <?php else:?>
-                                    <div class="valid-feedback">
-                                    <span>Looks Good !</span>
-                                    </div>
+                                    <small class="text-danger"><?= $validation->getError('confirmpassword');?></small>
                                 <?php endif;?>
                                 </div>
                               </div>

@@ -47,19 +47,21 @@
 			</div>
 			<div class="feedback-form">
 				<div class="form">
-					<div class="form-group">
-						<input type="text" name="name" id="name" class="form-control" placeholder="Enter Name " />
-					</div>
-					<div class="form-group">
-						<input type="email" name="email" id="email" class="form-control" placeholder="Enter Email " />
-					</div>
-					<div class="form-group">
-						<textarea name="message" id="message" rows="5" class="form-control"
-							placeholder="Your Message"></textarea>
-					</div>
-					<div class="form-group">
-						<input type="submit" value="Submit" name="submit" class="submit-btn">
-					</div>
+					<form action="<?= base_url("Home/subscribe_emails") ?>" method="POST">
+						<div class="form-group">
+							<input type="text" name="name" id="name" class="form-control" placeholder="Enter Name " />
+						</div>
+						<div class="form-group">
+							<input type="email" name="email" id="email" class="form-control" placeholder="Enter Email " required />
+						</div>
+						<div class="form-group">
+							<textarea name="message" id="message" rows="5" class="form-control"
+								placeholder="Your Message"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Submit" name="submit" class="submit-btn">
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>

@@ -43,12 +43,11 @@ background: linear-gradient(to left, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Fi
                     <h1 class="h4 text-gray-900 mb-2">Forgot Your Password?</h1>
                     <p class="mb-4">We get it, stuff happens. Just enter your email address below and we'll send you a link to reset your password!</p>
                   </div>
-                  <form class="user" action="<?= base_url('Admin/forget2');?>" method="POST">
+                  <form class="user" action="<?= base_url('Admin/send_mail');?>" method="POST">
                     <div class="form-group">
                       <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
                     </div>
                     <input type="submit" value="Reset Password" class="btn btn-primary btn-user btn-block">
-
                   </form>
                   <hr>
                   <div class="text-center">

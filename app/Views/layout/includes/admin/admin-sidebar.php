@@ -77,16 +77,18 @@
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
             aria-controls="collapsePages">
             <i class="fas fa-fw fa-folder"></i>
-            <span>Link</span>
+            <span>Visiter</span>
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Links:</h6>
-                <!-- <a class="collapse-item" href="<?= base_url('Admin/Notifications'); ?>">Notifications</a>
-                <a class="collapse-item" href="<?= base_url('Admin/Messages'); ?>">Messages</a>
-                <a class="collapse-item" href="#">link</a> -->
+                <a class="collapse-item" href="<?= base_url('Admin/Subscribers'); ?>">Subscribers</a>
+                <!-- <a class="collapse-item" href="<?= base_url('Admin/Notifications'); ?>">Notifications</a> -->
+                <!-- <a class="collapse-item" href="<?= base_url('Admin/Messages'); ?>">Messages</a> 
+                <a class="collapse-item" href="<?= base_url('Admin/Messages'); ?>">notifications</a>  -->
+                <!-- <a class="collapse-item" href="#">link</a> -->
                 <div class="collapse-divider"></div>
-                <h6 class="collapse-header">Other links:</h6>
+                <!-- <h6 class="collapse-header">Other links:</h6> -->
                 <!-- <a class="collapse-item" href="#">Link</a>
                 <a class="collapse-item" href="#">Link</a> -->
             </div>
@@ -94,18 +96,18 @@
     </li>
 
     <!-- Nav Item - Charts -->
-    <li class="nav-item">
+    <!-- <li class="nav-item">
         <a class="nav-link" href="#">
         <i class="fas fa-fw fa-chart-area"></i>
         <span>Link</span></a>
-    </li>
+    </li> -->
 
     <!-- Nav Item - Tables -->
-    <li class="nav-item">
+    <!-- <li class="nav-item">
         <a class="nav-link" href="#">
         <i class="fas fa-fw fa-table"></i>
         <span>Link</span></a>
-    </li>
+    </li> -->
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">

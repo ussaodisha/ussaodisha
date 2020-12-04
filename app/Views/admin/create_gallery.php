@@ -37,8 +37,9 @@
 
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
-    <div class="card-header py-3 ">
+    <div class="card-header py-3 d-flex justify-content-between align-items-center">
         <h4 class="m-0 font-weight-bold text-primary">Create Gallery</h4>
+        <a href="<?= base_url('Admin/Gallery'); ?>" class="btn btn-sm btn-primary">Show Gallery</a>
     </div>
     <div class="card-body">
         <div class="create-gallery-page">

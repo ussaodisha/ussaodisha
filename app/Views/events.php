@@ -25,7 +25,7 @@
 
 	<div class="Event-panel">
 		<div class="Event-heading">
-			<h1>Our Events</h1>
+			<h1>Events And News</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, eaque.</p>
 		</div>
 		<div class="Event-panel-box">
@@ -73,7 +73,7 @@
 					<div class="Event-content-box">
 						<div class="content-area-text">
 							<h5><?= $value['Post_title']; ?></h5>
-							<p><?= $value['Post_description']; ?></p>
+							<p class="text-justify"><?= $value['Post_description']; ?></p>
 							<small style="float:right;"> - <?= $value['Post_date']; ?></small>
 						</div>
 						<br>

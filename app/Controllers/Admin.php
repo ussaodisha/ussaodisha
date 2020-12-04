@@ -3,12 +3,14 @@ namespace App\Controllers;
 use App\Models\Users;
 use App\Models\Posts;
 use App\Models\Gallery;
+use App\Models\Subscribers;
+
 use CodeIgniter\Controller;
 
 class Admin extends BaseController
 {
 	public function index(){
-		
+		// return view('admin/login2');
 	}
 
 	public function register(){
@@ -33,10 +35,15 @@ class Admin extends BaseController
 			];
 
 			if(!$this->validate($rules)){
+				
 				$data['validation'] = $this->validator;
+
 			}else{
+				
 				$user = $model->where('Email',$email)->first();
+				
 				if(!$user){
+					
 					$newData = [
 						'Name'=>$firstname,
 						'Surname'=>$lastname,
@@ -62,23 +69,25 @@ class Admin extends BaseController
 	public function login(){
 		$data=[];
 		$model = new Users();
-		
-		// helper(['form']);
+	
 		if($this->request->getMethod() == 'post'){
 			
 			$email = $this->request->getpost('email');
 			$password = $this->request->getpost('pass');
 
-			$rules = [
-				'email'     => 'required|valid_email',
-				'pass'        => 'required',
-			];
+			$rules = $this->validate([
+				'email' => 'required|valid_email',
+				'pass' => 'required',
+			]);
 
-			if(! $this->validate($rules)){
+			if(!$rules){
+
 				$data['validation'] = $this->validator;
+
 			}else{
 
 				$user = $model->where('Email',$email)->first();
+
 				if($user){
 					if(password_verify($password, $user['Password'])){
 					
@@ -98,12 +107,12 @@ class Admin extends BaseController
 	
 					}else{
 						$data =[
-							'unsuccess' => "Username and Password not matched try again",
+							'unmatch_password' => "Wrong Password ! try again",
 						];
 					}
 				}else{
 					$data =[
-						'unsuccess' => "Username and Password not matched try again",
+						'unmatch_email' => "Email not matched try again !",
 					];
 				}
 			}
@@ -111,27 +120,53 @@ class Admin extends BaseController
 		return view('admin/login2',$data);
 	}
 
-	public function Dashboard(){
-		$data = [
-			'title' => 'Dashboard',
-		];
-		return view('admin/dashboard',$data);
-	}
-
 	public function logout(){
+		
 		if(session()->get('islogged_in')){
 			
 			session()->destroy();
 			return redirect()->to(base_url('/Admin'));
 			
         }else{
+
 			return redirect()->to(base_url('Admin/Dashboard'));
 		}
 	}
 
-	public function data(){
-		// comment
+	public function Dashboard(){
+		
+		$postmodel = new Posts;
+		$usermodel = new Users;
+		$gallerymodel = new Gallery;
+		$subscribermodel = new Subscribers;
+
+		$data = [
+			'title' => 'Dashboard',
+			'postdata' => $postmodel->countAll(),
+			'userdata' => $usermodel->countAll(),
+			'subscriberdata' => $subscribermodel->countAll(),
+			'gallerydata' => $gallerymodel->countAll(),
+
+		];
+		
+		return view('admin/dashboard',$data);
 	}
+
+	// public function data(){
+	// 	$postmodel = new Posts;
+	// 	$usermodel = new Users;
+	// 	$gallerymodel = new Gallery;
+	// 	$subscribermodel = new Subscribers;
+
+	// 	$data = [
+			
+	// 		'postdata' => $postmodel->countAll(),
+	// 		'userdata' => $usermodel->countAll(),
+	// 		'subscriberdata' => $subscribermodel->countAll(),
+	// 		'gallerydata' => $gallerymodel->countAll(),
+
+	// 	];
+	// }
 
 	public function forget2(){
 
@@ -146,48 +181,7 @@ class Admin extends BaseController
 		
 	}
 
-	public function Users(){
-		$data =[];
-		$Usermodel = new Users();
-		$data = [
-			'userdata' =>  $Usermodel->findAll(),
-		];
-		return view('Admin/users',$data);
-	}
-
-	public function Posts(){
-		$data =[];
-		$Postmodel = new Posts();
-		$data = [
-			'postdata' => $Postmodel->join('Users', 'Users.user_id = Posts.Post_owner','left')
-									->orderBy('Post_id','desc')
-									->findAll(),
-		];
-		return view('Admin/posts',$data);
-	}
-
-	public function Gallery(){
-		$data =[];
-		$gallerymodel = new Gallery();
-		// $data = [
-		// 	'gallerydata' => $gallerymodel->join('Users', 'Users.user_id = Posts.Post_owner','left')
-		// 							->orderBy('Post_id','desc')
-		// 							->findAll(),
-		// ];
-
-		$data = [
-			'gallerydata' => $gallerymodel->findAll(),
-		];
-		return view('Admin/gallery',$data);
-	}
-
-	public function Notifications(){
-		return view('Admin/notifications');
-	}
-
-	public function Messages(){
-		return view('Admin/messages');
-	}
+// ------------------------------------------------------------------------Profile Section
 
 	public function Profile(){
 		$data = [];
@@ -199,7 +193,7 @@ class Admin extends BaseController
 	}
 
 	public function Update_profile(){
-			
+		
 		$Usermodel = new Users();
 
 		$firstname = $this->request->getpost('first_name');
@@ -210,56 +204,71 @@ class Admin extends BaseController
 		$newfile = $this->request->getFile('imgfile');
 		$oldfile = $this->request->getPost('old_image');
 
-			$rules = [
-				'first_name' 		=> 'required|min_length[2]|max_length[50]',
-				'last_name' 			=> 'required|min_length[2]|max_length[50]',
+		$rules = [
+			'first_name' 		=> 'required|min_length[2]|max_length[50]',
+			'last_name' 			=> 'required|min_length[2]|max_length[50]',
+		];
+
+		if(!$this->validate($rules)){
+			
+			$data['validation'] = $this->validator;
+
+		}else{
+			
+			if(!empty($newfile->getName())){
+
+				if($newfile->isValid()){
+					$randomfilename = $newfile->getRandomName();
+					unlink(ROOTPATH.'public/Uploads/profiles/'.$oldfile);
+					$newfile->move(ROOTPATH.'public/Uploads/profiles/',$randomfilename);
+					$uploadfile = $randomfilename;
+
+				}else{
+
+					$data = [
+						'User_Exist' => "Images file not support",
+					];
+				}
+
+			}else{
+				$uploadfile = $oldfile;
+			}
+
+			$update_data = [
+				'Name'=>$firstname,
+				'Surname'=>$lastname,
+				'State'=>$state,
+				'City'=>$city,
+				'Zip'=>$zip,
+				'profile_image'=>$uploadfile,
 			];
 
-			if(!$this->validate($rules)){
-				$data['validation'] = $this->validator;
+			if($Usermodel->where('user_id',session()->get('user_id'))->set($update_data)->update()){
+
+				$session = session();
+				$session->setFlashdata('success','Profile Updated Successfully');
+				return redirect()->to(base_url('/Admin/Profile'));
+			
 			}else{
 				
-				if(!empty($newfile->getName())){
-					if($newfile->isValid()){
-						$randomfilename = $newfile->getRandomName();
-						$newfile->move(ROOTPATH.'public/Uploads/profiles/',$randomfilename);
-						$uploadfile = $randomfilename;
-					}else{
-						$data = [
-							'User_Exist' => "Images file not support",
-						];
-					}
-				}else{
-					$uploadfile = $oldfile;
-				}
-
-				$update_data = [
-					'Name'=>$firstname,
-					'Surname'=>$lastname,
-					'State'=>$state,
-					'City'=>$city,
-					'Zip'=>$zip,
-					'profile_image'=>$uploadfile,
-				];
-
-				if($Usermodel->where('user_id',session()->get('user_id'))->set($update_data)->update()){
-
-					$session = session();
-					$session->setFlashdata('success','Profile Updated Successfully');
-					return redirect()->to(base_url('/Admin/Profile'));
-				
-				}else{
-					
-					$session = session();
-					$session->setFlashdata('unsuccess','Profile Update Failed');
-					return redirect()->to(base_url('/Admin/Profile'));
-				}
+				$session = session();
+				$session->setFlashdata('unsuccess','Profile Update Failed');
+				return redirect()->to(base_url('/Admin/Profile'));
 			}
+		}
 	}
 
-	//--------------------------------------------------------------------
 
-	// create posts-------------------------------------------------------
+// ----------------------------------------------------------------------------User Section
+
+	public function Users(){
+		$data =[];
+		$Usermodel = new Users();
+		$data = [
+			'userdata' =>  $Usermodel->findAll(),
+		];
+		return view('Admin/users',$data);
+	}
 
 	public function Create_user(){
 		$data=[];
@@ -327,6 +336,47 @@ class Admin extends BaseController
 		return view('Admin/Create_user',$data);
 	}
 
+	public function delete_user($id){
+		
+		$usermodel = new Users();
+		$userdata = $usermodel->where('user_id',$id)->find();
+		if($usermodel->where('user_id',$id)->delete()){
+
+			if(!empty($userdata[0]['profile_image'])){
+
+				unlink(ROOTPATH.'public/Uploads/profiles/'.$userdata[0]['profile_image']);
+				$session = session();
+				$session->setFlashdata('success','User Deleted Successfully');
+				return redirect()->to(base_url('/Admin/Users'));
+			}
+			else{
+				$session = session();
+				$session->setFlashdata('success','User Deleted Successfully');
+				return redirect()->to(base_url('/Admin/Users'));
+			}
+			
+
+		}else{
+			$session = session();
+			$session->setFlashdata('unsuccess','Deletion Failed ! Try Again');
+			return redirect()->to(base_url('/Admin/Users'));
+		}
+
+	}
+
+// ----------------------------------------------------------------------------Post Section
+
+	public function Posts(){
+		$data =[];
+		$Postmodel = new Posts();
+		$data = [
+			'postdata' => $Postmodel->join('Users', 'Users.user_id = Posts.Post_owner','left')
+									->orderBy('Post_id','desc')
+									->findAll(),
+		];
+		return view('Admin/posts',$data);
+	}
+
 	public function create_post(){
 		$data=[];
 		$postmodel = new Posts();
@@ -337,23 +387,21 @@ class Admin extends BaseController
 			$description = $this->request->getpost('post_description');
 			$newfile = $this->request->getFile('postimgfile');
 			$date = date("d-M-Y");
+
 			$rules = [
 				'post_title' 		=> 'required',
 				'post_description' 	=> 'required',
 			];
 
 			if(!$this->validate($rules)){
+				
 				$data['validation'] = $this->validator;
+
 			}else{
 				
 				if($newfile->isValid()){
+					
 					$randomfilename = $newfile->getRandomName();
-				}else{
-					$data = [
-						'imgFailed' => "Images file not support",
-					];
-				}
-
 					$newData = [
 						'Post_title'=>$title,
 						'Post_description'=>$description,
@@ -374,10 +422,124 @@ class Admin extends BaseController
 						$session->setFlashdata('unsuccess','Post create Unsuccessful');
 						return redirect()->to(base_url('Admin/Create_post'));
 					}
+
+				}else{
+					
+					$data = [
+						'invalidimage' => "Images file Missing or not support",
+					];
+				}
 			}
 		}
-		// return view('Admin/Create_user',$data);
 		return view('Admin/create_post',$data);
+	}
+
+	public function delete_post($id){
+		
+		$postmodel = new Posts();
+		$postdata = $postmodel->where('Post_id',$id)->find();
+
+		if($postmodel->where('Post_id',$id)->delete()){
+			unlink(ROOTPATH.'public/Uploads/post-uploads/'.$postdata[0]['Post_image']);
+			$session = session();
+			$session->setFlashdata('success','Post Deleted Successfully');
+			return redirect()->to(base_url('/Admin/Posts'));
+		}else{
+			$session = session();
+			$session->setFlashdata('unsuccess','Deletion Failed ! Try Again');
+			return redirect()->to(base_url('/Admin/Posts'));
+		}
+
+	}
+
+	public function Update_post($id){
+		
+		$data = [];
+		$postmodel = new Posts();
+		$data = [
+			'postdata' => $postmodel->where('Post_id',$id)->find(),
+		];
+
+		if($this->request->getMethod() == 'post'){
+			
+			$title = $this->request->getpost('post_title');
+			$description = $this->request->getpost('post_description');
+			$newfile = $this->request->getFile('postimgfile');
+			$oldfile = $this->request->getPost('old_image');
+
+			$rules = [
+				'post_title' 		=> 'required',
+				'post_description' 	=> 'required',
+			];
+
+			if(!$this->validate($rules)){
+
+				$data['validation'] = $this->validator;
+
+			}else{
+				
+				if(!empty($newfile->getName())){
+
+					if($newfile->isValid()){
+						
+						$randomfilename = $newfile->getRandomName();
+						unlink(ROOTPATH.'public/Uploads/post-uploads/'.$oldfile);
+						$newfile->move(ROOTPATH.'public/Uploads/post-uploads/',$randomfilename);
+						$uploadfile = $randomfilename;
+
+					}else{
+
+						$data = [
+							'invalidimage' => "Images file Missing or not support",
+						];
+					}
+
+				}else{
+
+					$uploadfile = $oldfile;
+
+				}
+
+				$update_data = [
+					'Post_title'=>$title,
+					'Post_description'=>$description,
+					'Post_owner'=>session()->get('user_id'),
+					'Post_image'=>$uploadfile,
+				];
+
+				if($postmodel->where('Post_id',$id)->set($update_data)->update()){
+
+					$session = session();
+					$session->setFlashdata('success','Post Updated Successfully');
+					return redirect()->to(base_url('/Admin/Update_post/'.$id));
+				
+				}else{
+					
+					$session = session();
+					$session->setFlashdata('unsuccess','Post Update Failed');
+					return redirect()->to(base_url('/Admin/Update_post/'.$id));
+				}
+			}
+		}
+		
+		return view('Admin/update_post',$data);
+	}
+
+// ---------------------------------------------------------------------------Gallry Section
+
+	public function Gallery(){
+		$data =[];
+		$gallerymodel = new Gallery();
+		// $data = [
+		// 	'gallerydata' => $gallerymodel->join('Users', 'Users.user_id = Posts.Post_owner','left')
+		// 							->orderBy('Post_id','desc')
+		// 							->findAll(),
+		// ];
+
+		$data = [
+			'gallerydata' => $gallerymodel->findAll(),
+		];
+		return view('Admin/gallery',$data);
 	}
 
 	public function create_gallery(){
@@ -418,43 +580,6 @@ class Admin extends BaseController
 		return view('Admin/create_gallery');
 	}
 
-	public function delete_user($id){
-		
-		$usermodel = new Users();
-		$userdata = $usermodel->where('user_id',$id)->find();
-		if($usermodel->where('user_id',$id)->delete()){
-
-			unlink(ROOTPATH.'public/Uploads/profiles/'.$userdata[0]['profile_image']);
-			$session = session();
-			$session->setFlashdata('success','User Deleted Successfully');
-			return redirect()->to(base_url('/Admin/Users'));
-
-		}else{
-			$session = session();
-			$session->setFlashdata('unsuccess','Deletion Failed ! Try Again');
-			return redirect()->to(base_url('/Admin/Users'));
-		}
-
-	}
-
-	public function delete_post($id){
-		
-		$postmodel = new Posts();
-		$postdata = $postmodel->where('Post_id',$id)->find();
-
-		if($postmodel->where('Post_id',$id)->delete()){
-			unlink(ROOTPATH.'public/Uploads/post-uploads/'.$postdata[0]['Post_image']);
-			$session = session();
-			$session->setFlashdata('success','Post Deleted Successfully');
-			return redirect()->to(base_url('/Admin/Posts'));
-		}else{
-			$session = session();
-			$session->setFlashdata('unsuccess','Deletion Failed ! Try Again');
-			return redirect()->to(base_url('/Admin/Posts'));
-		}
-
-	}
-
 	public function delete_gallery($id){
 		
 		$gallerymodel = new Gallery();
@@ -472,6 +597,47 @@ class Admin extends BaseController
 		}
 
 	}
+
+// --------------------------------------------------------------------------Subscribers Section
+
+	public function Subscribers(){
+		$data =[];
+		$subscribermodel = new Subscribers();
+
+		$data = [
+			'subscriberdata' => $subscribermodel->findAll(),
+		];
+		return view('Admin/subscriber',$data);
+	}
+
+	public function delete_subscriber($id){
+		$subscribermodel = new Subscribers();
+		$subscriberdata = $subscribermodel->where('Sub_id',$id)->find();
+
+		if($subscribermodel->where('Sub_id',$id)->delete()){
+			$session = session();
+			$session->setFlashdata('success','Data Deleted Successfully');
+			return redirect()->to(base_url('/Admin/Subscribers'));
+		}else{
+			$session = session();
+			$session->setFlashdata('unsuccess','Deletion Failed ! Try Again');
+			return redirect()->to(base_url('/Admin/Subscribers'));
+		}	
+	}
+
+// ------------------------------------------------------------------------Notifications Section
+
+	public function Notifications(){
+		return view('Admin/notifications');
+	}
+
+// -------------------------------------------------------------------------Messages Section
+
+	public function Messages(){
+		return view('Admin/messages');
+	}
+
+// ------------------------------------------------------------------------------Make/Remove Admin Section
 
 	public function make_admin($id){
 		$usermodel = new Users();
@@ -495,5 +661,55 @@ class Admin extends BaseController
 		}else{
 			return redirect()->to(base_url('/Admin/Users'));
 		}
+	}
+
+// ----------------------------------------------------------------------------Forget Password email
+
+	public function send_mail(){
+
+		$emailto = $this->request->getpost('email');
+        $subject = "Test Message from Ci4";
+        $message = "This message is test message and Successfull";
+        
+        $email = \Config\Services::email();
+ 
+        $email->setTo($emailto);
+        $email->setFrom('dhirajdeshmukh1922001@gmail.com', 'Ussaodisha.org');
+        
+        $email->setSubject($subject);
+		$email->setMessage($message);
+		
+		if ($email->send()) 
+ 		{
+            echo 'Email successfully sent';
+        } 
+ 		else 
+ 		{
+            $data = $email->printDebugger(['headers']);
+			echo 'Email send failed <pre>';
+			print_r($data);
+		}
+	}
+
+// -------------------------------------------------------------------------------CSV Export Section
+
+	public function export_csv(){ 
+		// file name 
+		$filename = 'Subscribers_'.date('Ymd').'.csv'; 
+		header("Content-Description: File Transfer"); 
+		header("Content-Disposition: attachment; filename=$filename"); 
+		header("Content-Type: application/csv; ");
+	   // get data 
+	   $subscribermodel = new Subscribers;
+		$usersData = $subscribermodel->findAll();
+		// file creation 
+		$file = fopen('php://output','w');
+		$header = array("id","Email","Name","Messages","Date","Time"); 
+		fputcsv($file, $header);
+		foreach ($usersData as $key=>$line){ 
+			fputcsv($file,$line); 
+		}
+		fclose($file); 
+		exit; 
 	}
 }

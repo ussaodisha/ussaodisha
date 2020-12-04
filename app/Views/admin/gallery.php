@@ -9,6 +9,24 @@
         <i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
 </div>
 
+<?php if(session()->get('success')) :?>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success</strong> <?= session()->get('success'); ?>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>             
+<?php endif; ?>
+
+<?php if(session()->get('unsuccess')) :?>
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Alert !</strong> <?= session()->get('unsuccess'); ?>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>             
+<?php endif; ?>
+
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-header py-3 d-flex justify-content-between align-items-center">
@@ -24,7 +42,7 @@
                         <!-- <th>owner</th> -->
                         <th>Name</th>
                         <th>Date</th>
-                        <th>Action</th>
+                        <th style="width: 50px;">Action</th>
                     </tr>
                 </thead>
                 <tbody>

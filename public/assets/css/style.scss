@@ -1,9 +1,10 @@
 // Import Custom frontend style files
 @import "fonts";
 
-*{
+* {
     font-family: $font-poppins;
 }
+
 @import "includes";
 @import "home";
 @import "about";
@@ -15,3 +16,8 @@
 
 @import "medium";
 @import "small";
+
+
+
+
+

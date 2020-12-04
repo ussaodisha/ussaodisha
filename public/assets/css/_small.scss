@@ -194,6 +194,7 @@
             background-size: cover;
             background-attachment: fixed;
             display: flex;
+            flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
             position: relative;
@@ -204,26 +205,110 @@
                 }
             }
 
-            .join-button {
-
-                a {
-                    height: 20px;
-                    width: 100px;
-                    background-color: transparent;
-                    outline: none;
-                    border: 1px solid orange;
-                    border-radius: 50px;
-                    color: orange;
-                    font-size: 14px;
-                    font-weight: normal;
-                    padding: 5px 10px;
-                    text-decoration: none;
-                }
-
-                a:hover {
-                    background-color: rgba(255, 255, 255, .2);
-                    border-color: white;
-                    color: white;
+            .join-us-panel {
+                display: flex;
+    
+                // .join-us-form{
+                //     position: relative;
+                //     width: 600px;
+                //     height: 60px;
+    
+                //     .join-us-email{
+                //         height: 60px;
+                //         width: 100%;
+                //         border: none;
+                //         outline: none;
+                //         font-size: 20px;
+                //         box-sizing: border-box;
+                //         padding: 10px 20px;
+                //         padding-right: 155px;
+                //         border: 2px solid white;
+                //         border-radius: 50px;
+                //         background-color: rgba(255,255,255,0.4);
+                //     }
+    
+                //     .join-btn-box{
+                //         height: 60px;
+                //         width: 150px;
+                //         position: absolute;
+                //         top: 0;
+                //         right: 0;
+                //         padding: 5px;
+                //         display: flex;
+                //         justify-content: center;
+                //         align-items: center;
+    
+    
+    
+                //         .join-us-btn{
+                //             height: 50px;
+                //             width: 150px;
+                //             outline: none;
+                //             border: 2px solid white;
+                //             background-color: orange;
+                //             color: white;
+                //             top: 0;
+                //             right: 0;
+                //             border-radius: 50px;
+                //             font-size: 20px;
+                //         }
+                //     }
+                // }
+    
+    
+                .join-us-form {
+    
+                    width: 350px;
+                    height: 30px;
+    
+    
+                    form {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        .join-us-email {
+                            height: 30px;
+                            width: 75%;
+                            border: none;
+                            outline: none;
+                            font-size: 12px;
+                            box-sizing: border-box;
+                            padding: 5px 10px;
+                            // padding-right: 155px;
+                            border: 2px solid white;
+                            border-radius: 50px;
+                            background-color: rgba(255, 255, 255, 0.3);
+                            margin-right: 5px;
+                        }
+    
+                        .join-btn-box {
+                            height: 30px;
+                            width: 25%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+    
+                            .join-us-btn {
+                                height: 100%;
+                                width: 100%;
+                                outline: none;
+                                border: 2px solid white;
+                                background-color: orange;
+                                color: white;
+                                // padding: 5px 10px;
+                                border-radius: 50px;
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+    
+                            // .join-us-btn:hover{
+                            //     background-color: rgba(255,255,255,0.15);
+                            // }
+                        }
+    
+                    }
+    
                 }
             }
         }

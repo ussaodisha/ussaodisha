@@ -3,6 +3,7 @@
 namespace App\Controllers;
 use App\Models\Gallery;
 use App\Models\Posts;
+use App\Models\Subscribers;
 
 class Home extends BaseController
 {
@@ -51,6 +52,35 @@ class Home extends BaseController
 		return view('contact',$data);
 	}
 
-	//--------------------------------------------------------------------
+	//-------------------------------------------------------------------- backdata
+
+	public function subscribe_emails(){
+
+		$Subscribersmodel = new Subscribers;
+			
+		$email = $this->request->getpost('email');
+		$name = $this->request->getpost('name');
+		$message = $this->request->getpost('message');
+		$time = date("h-m-s-a");
+		$date = date("d-M-Y");
+
+		$newdata = [
+			'Emails'      => $email,
+			'Sub_name' 	  => $name,
+			'Sub_message' => $message,
+			'Date'		  => $date,
+			'Time'		  => $time,
+		];
+
+		if($Subscribersmodel->save($newdata)){
+
+			return redirect()->to(base_url('/'));
+
+		}else{
+
+			return redirect()->to(base_url('/'));
+
+		}
+	}
 
 }

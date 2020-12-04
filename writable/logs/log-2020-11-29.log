@@ -1,0 +1,49 @@
+CRITICAL - 2020-11-29 06:52:51 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ussa\app\Controllers\Home.php(30): CodeIgniter\Model->findAll()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->Events()
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-29 07:11:49 --> syntax error, unexpected 'if' (T_IF), expecting ':'
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/login2', Array, true)
+#1 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(111): view('admin/login2', Array)
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->login()
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2020-11-29 07:11:54 --> syntax error, unexpected 'if' (T_IF), expecting ':'
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/login2', Array, true)
+#1 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(111): view('admin/login2', Array)
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->login()
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2020-11-29 07:23:58 --> syntax error, unexpected 'if' (T_IF), expecting ':'
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/login2', Array, true)
+#1 C:\xampp\htdocs\ussa\app\Controllers\Admin.php(112): view('admin/login2', Array)
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin->login()
+#3 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2020-11-29 23:38:53 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ussa\app\Controllers\Home.php(30): CodeIgniter\Model->findAll()
+#4 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->Events()
+#5 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ussa\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ussa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}

@@ -9,6 +9,33 @@
         <i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
 </div>
 
+<!-- <?php if(session()->get('invalidimage')) :?>
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Invalid</strong> <?= session()->get('invalidimage'); ?>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>             
+<?php endif; ?> -->
+
+<?php if(session()->get('success')) :?>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success</strong> <?= session()->get('success'); ?>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>             
+<?php endif; ?>
+
+<?php if(session()->get('unsuccess')) :?>
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Alert !</strong> <?= session()->get('unsuccess'); ?>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>             
+<?php endif; ?>
+
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-header py-3 d-flex justify-content-between align-items-center">
@@ -20,23 +47,26 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
-                        <th>Title</th>
-                        <th>Description</th>
-                        <th>Date</th>
-                        <th>Owner</th>
-                        <th>Action</th>
+                        <th style="width: 200px;">Title</th>
+                        <th style="width: calc(100% - 460px);">Description</th>
+                        <th style="width: 100px;">Date</th>
+                        <th style="width: 100px;">Owner</th>
+                        <th style="width: 60px;">Action</th>
                     </tr>
                 </thead>
                 <tbody>
                 <?php if(!empty($postdata)):?>
                     <?php foreach($postdata as $value):?>
                     <tr>
-                        <td><?= ucwords($value['Post_title']); ?></td>
-                        <td><?= ucwords($value['Post_description']); ?></td>
-                        <td><?= ucwords($value['Post_date']); ?></td>
-                        <td><?= ucwords($value['Name']); ?></td>
-                        <td class="d-flex justify-content-around align-items-center">
+                        <td><?= $value['Post_title']; ?></td>
+                        <td><?= $value['Post_description']; ?></td>
+                        <td><?= $value['Post_date']; ?></td>
+                        <td><?= $value['Name']; ?></td>
+                        <td class="d-flex justify-content-between align-items-center">
                             <!-- <a href="" class="btn btn-sm btn-warning">Make admin</a> -->
+                            <a href="<?= base_url('Admin/Update_post/'.$value['Post_id']); ?>" class="btn btn-info btn-circle btn-sm">
+                                <i class="fas fa-edit"></i>
+                            </a>
                             <a href="<?= base_url('Admin/delete_post/'.$value['Post_id']); ?>" class="btn btn-danger btn-circle btn-sm">
                                 <i class="fas fa-trash"></i>
                             </a>

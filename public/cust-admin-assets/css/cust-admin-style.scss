@@ -47,6 +47,53 @@
     }
 }
 
+.update-post-page{
+    
+    .post-image{
+        max-width: 60%;
+        width: auto;
+        height: 350px;
+        margin: 0 auto;
+        // display: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        img{
+            height: 100%;
+            width: auto;
+            border: 2px dotted grey;
+        }
+    }
+
+    .image-upload-panel{
+
+        input[type="file"]{
+            display: none;
+        }
+
+        label{
+            color: #a29bfe;
+            height: 35px;
+            width: 150px;
+            // background-color: #a29bfe;
+            margin: auto;
+            border: 2px solid #a29bfe;
+            border-radius: 10px;
+            display: flex;
+            font-size: 14px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        label:hover{
+            color: royalblue;
+            border-color: royalblue;
+        }
+    }
+}
+
 .create-gallery-page{
     
     .post-image{
